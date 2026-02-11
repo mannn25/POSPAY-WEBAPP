@@ -1,0 +1,255 @@
+.login-page {
+    font-family: 'Inter', sans-serif;
+    background-color: #F8F9FA;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page .login-card {
+    width: 100%;
+    max-width: 420px;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.login-page .logo-container {
+    width: 56px;
+    height: 56px;
+    background-color: #0D6EFD;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: white;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.2);
+}
+
+.login-page .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+    border-color: #0D6EFD;
+}
+
+.login-page .input-group-text {
+    background-color: transparent;
+    color: #6c757d;
+}
+
+.login-page .btn-password-toggle {
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+    border-left: none;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    padding: 0 0.75rem;
+    transition: color 0.15s ease-in-out;
+}
+
+.login-page .btn-password-toggle:hover {
+    color: #0D6EFD;
+}
+
+.login-page .btn-primary {
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+}
+
+.login-page .footer-text {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.login-page .material-symbols-outlined {
+    font-size: 20px;
+}
+
+.login-page .logo-icon {
+    font-size: 32px;
+}
+
+
+:root {
+    --primary-color: #2b6cee;
+    --bg-light: #f6f6f8;
+    --sidebar-width: 260px;
+}
+
+.dashboard-page {
+    font-family: "Public Sans", sans-serif;
+    background-color: var(--bg-light);
+    color: #334155;
+}
+
+.dashboard-page .stat-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+
+.dashboard-page .sidebar {
+    width: var(--sidebar-width);
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    border-right: 1px solid #e2e8f0;
+    z-index: 1000;
+}
+
+.dashboard-page .main-content {
+    margin-left: var(--sidebar-width);
+    min-height: 100vh;
+}
+
+.dashboard-page .nav-link {
+    color: #64748b;
+    font-weight: 500;
+    padding: 0.625rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.dashboard-page .nav-link:hover {
+    background-color: #f8fafc;
+    color: var(--primary-color);
+}
+
+.dashboard-page .nav-link.active {
+    background-color: rgba(43, 108, 238, 0.1);
+    color: var(--primary-color);
+}
+
+.dashboard-page .material-symbols-outlined {
+    font-size: 20px;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.dashboard-page .card {
+    border: 1px solid #e2e8f0;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+        .table thead th {
+            background-color: #f8fafc;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+            color: #64748b;
+            border-bottom: 1px solid #e2e8f0;
+            padding: 1rem 1.5rem;
+        }
+
+        .table tbody td {
+            padding: 1rem 1.5rem;
+            vertical-align: middle;
+            font-size: 0.875rem;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .form-control,
+        .form-select {
+            border-color: #e2e8f0;
+            font-size: 0.875rem;
+        }
+
+        .form-control:focus,
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(43, 108, 238, 0.15);
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.75rem;
+        }
+
+        .pagination .page-link {
+            color: #64748b;
+            border-color: #e2e8f0;
+            font-size: 0.875rem;
+        }
+
+        .pagination .page-item.active .page-link {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .dataTables_filter input {
+        border: 1px solid #e0e0e0 !important;
+        border-radius: 8px !important;
+        padding: 5px 12px !important;
+        outline: none;
+    }
+
+    /* Membentuk Pagination menjadi Kapsul Abu-abu */
+    /* Container Utama: Menjadi Kapsul Abu-abu */
+.dataTables_wrapper .dataTables_paginate {
+    background-color: #f1f3f4 !important; /* Abu-abu muda sesuai gambar */
+    padding: 6px 12px !important;
+    border-radius: 50px !important;
+    display: inline-flex !important;
+    align-items: center;
+    border: none !important;
+}
+
+/* Gaya Umum Tombol (Angka dan Panah) */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border: none !important;
+    background: transparent !important;
+    color: #17c1e8 !important; /* Warna biru cerah */
+    font-weight: 500 !important;
+    margin: 0 2px !important;
+    padding: 6px 12px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease;
+}
+
+/* Tombol Angka Aktif: Menjadi Lingkaran Putih Melayang */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #ffffff !important;
+    color: #17c1e8 !important;
+    border-radius: 12px !important; /* Membuat kotak membulat putih */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1) !important;
+    border: none !important;
+    font-weight: bold !important;
+}
+
+/* Efek Hover untuk tombol non-aktif */
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover:not(.current) {
+    background: rgba(255, 255, 255, 0.4) !important;
+    border-radius: 12px !important;
+    color: #17c1e8 !important;
+    border: none !important;
+}
+
+/* Menghilangkan garis atau border bawaan DataTables */
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    color: #bdc3c7 !important;
+    cursor: default !important;
+    background: transparent !important;
+}
